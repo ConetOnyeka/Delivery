@@ -190,7 +190,7 @@ p{
 .right{
     display: flex;
     flex-direction: row;
-    gap: 20px;
+    gap: 15px;
     align-items: center;
 }
 
