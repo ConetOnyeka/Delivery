@@ -1,13 +1,17 @@
 body{
+    width: 100%;
     font-family: Georgia, 'Times New Roman', Times, serif;
     padding: 0;
     margin: 0;
-    overflow-x: hidden;
-
+    box-sizing: border-box;
+    overflow-x:hidden ;
 }
 
 nav{
+    width: 100%;
+    margin: auto;
     padding: 20px;
+    
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -53,6 +57,7 @@ a:hover{
 }
 
 .content{
+    width: 100%;
     padding: 20px;
     background: linear-gradient(0deg, rgba(0,0,0,0.30)0%,
      rgba(0,0,0,0.30)100%),url('1.jpg');
@@ -73,6 +78,7 @@ h1{
 }
 
 .about{
+    width: 100%;
     text-align: center;
     padding: 20px;
     margin: 0;
@@ -97,11 +103,12 @@ p{
 }
 
 .container{
+    width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 20px;
-    padding:20px;
     align-items: center;
+    padding: 20px;
+    margin: 0;
 }
 
 .colu{
@@ -137,8 +144,11 @@ p{
     padding: 20px;
     background: #ffbf14;
     flex-shrink: 0;
+    margin: 25px;
     align-items: center;
 }
+
+
 .column2{
     padding: 20px;
     margin-left: auto;
@@ -175,6 +185,7 @@ p{
     border-radius: 8px;
     border: 1px solid #515151;
     padding-left: 10px;
+    
 }
 
 .message{
@@ -208,13 +219,17 @@ p{
     color: #fff;
 }
 
-.footer-logistic{
+footer{
+    width: 100%;
     background: #000;
     color:#fff;
+    margin: 25px;
+    padding-right: 30px;
     
 } 
 
 .container-footer{
+    width: 100%;
     padding: 7px;
 }
  .row{
@@ -247,4 +262,25 @@ p{
  }
  .bt{
     margin-top: 20px;
+ }
+
+ @media screen and (max-width:767px) {
+    .body{
+        width: 100%;
+        height: auto;
+    }
+    .nav-links{
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    .button-container{
+        margin-top: 20px;
+    }
+    .container-logistic{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+   .content{
+    text-align: center;
+   }
  }
